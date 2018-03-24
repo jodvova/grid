@@ -1,0 +1,36 @@
+tr {
+  user-select: none;
+}
+td.highlighted1 {
+  background-color: rgba(172, 34, 24, 0.774);
+}
+td.highlighted2 {
+  background-color: rgba(78, 196, 23, 0.774);
+}
+div.config {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  position: absolute;
+  left: 0px;
+}
+.btn-width {
+  width: 50px;
+}
+.alert-fixed {
+  position:fixed; 
+  z-index:2; 
+}
+.table-fit {
+  width: 1px;
+}
+.pos-long {
+  color: green;
+  font-weight: bold;
+}
+.pos-short {
+  color: red;
+  font-weight: bold;
+}

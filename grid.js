@@ -10,8 +10,6 @@ function add_timestamp(url)
     url += "no_cache_ts=" + new Date().getTime();
     return url;
 }
-function get_name(sys, i) { return sys.names[i]; }
-
 function try_get_local_value(name, def)
 {
     if (name in localStorage)
@@ -391,7 +389,7 @@ function discard_changes(sys)
 
 function select_expiry(sys, i, j)
 {
-    sys.selected_name = get_name(sys, i);
+    sys.selected_name = sys.names[i];
     sys.selected_exp = sys.selected_name.expiries[j];
     trace(sys, "selected " + sys.selected_name.name + "/" + sys.selected_exp);
     
